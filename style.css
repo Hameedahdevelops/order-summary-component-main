@@ -1,0 +1,114 @@
+*{
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+body{
+    background-color: var(--Desaturated-blue);
+    text-align: center;
+}
+.info{
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    /* transform: translate(0,-250%);*/
+} 
+.info p{
+    font-size: 16px;
+    color: var(--pale-blue);
+
+}
+.wrapper{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-image:url(images/pattern-background-desktop.svg) ;
+    background-repeat: no-repeat;
+    padding: 40px;
+    
+  
+    /* background-size: cover; */
+    /* overflow: hidden; */
+    
+
+}
+.parent{
+    background-color: white;
+    width: 300px;
+    height: 500px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+   
+    
+}
+.img-box{
+    max-width: 100%;
+    border-radius: 5% 5% 0 0;
+    transform: translate(0,-11%); 
+}
+h2{
+    transform: translate(0,-10%);
+}
+.first-button{
+    display: flex;
+    flex-direction: row;
+}
+.btn{
+    border:none;
+    padding:5px 10px;
+    border-radius:10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn-change{
+    background-color: transparent;
+    color:var(--bright-blue);
+    text-decoration: underline;
+    margin-left: 20px;
+    
+}
+.btn-proceed{
+    background-color: var(--Dark-blue);
+    color: white;
+    padding: 5px;
+    margin-bottom: 10px;
+    width:80%;
+}
+.btn-cancel{
+    background-color: transparent;
+    color: var(--Desaturated-blue);
+}
+.plan{
+    margin: 10px 0;
+    background-color: var(--Very-pale-blue);
+    width:90%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.plan article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.plan article img{
+    margin-right: 15px;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
